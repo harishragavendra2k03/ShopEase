@@ -1,0 +1,96 @@
+.payment-page .payment-form {
+  align-content: start;
+}
+
+.payment-methods {
+  display: grid;
+  gap: 12px;
+}
+
+.payment-method {
+  display: flex;
+  min-width: 0;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid #d9dce3;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: border-color 150ms ease, background-color 150ms ease;
+}
+
+.payment-method:hover,
+.payment-method.is-selected {
+  border-color: #743bb5;
+  background: #f8f4fc;
+}
+
+.payment-method input {
+  width: 17px;
+  height: 17px;
+  margin: 2px 0 0;
+  accent-color: #743bb5;
+  flex-shrink: 0;
+}
+
+.payment-method-copy {
+  display: grid;
+  min-width: 0;
+  gap: 5px;
+}
+
+.payment-method-copy strong {
+  color: #252a34;
+  font-size: 15px;
+}
+
+.payment-method-copy small {
+  color: #6b707a;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.payment-disclaimer {
+  margin: 4px 0 0;
+  padding: 13px 15px;
+  border-radius: 9px;
+  background: #f5f2fa;
+  color: #5d526a;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.payment-items li {
+  align-items: flex-start;
+}
+
+.payment-items .payment-item-name {
+  display: grid;
+  gap: 5px;
+}
+
+.payment-item-name small {
+  color: #737985;
+  font-size: 12px;
+}
+
+.payment-delivery {
+  display: grid;
+  gap: 6px;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid #e8e9ed;
+  color: #5d626d;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.payment-delivery strong {
+  color: #252a34;
+}
+
+@media (max-width: 560px) {
+  .payment-method {
+    padding: 13px;
+  }
+}
